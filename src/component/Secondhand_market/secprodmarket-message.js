@@ -14,7 +14,7 @@ class secprodmarket_detail extends Component {
                 title:"",
                
                  price:"",
-                 img:["assets/images/baobao1_1.jpg","assets/images/baobao1_2.jpg","assets/images/baobao1_3.jpg","assets/images/baobao1_4.jpg",],
+                 img:["baobao1_1.jpg","baobao1_2.jpg","baobao1_3.jpg","baobao1_4.jpg"],
                  address:"",
                 furtherAddress:"",
                  phoneNumber:"",
@@ -54,62 +54,20 @@ let mm={uid:this.state.uid,secid:this.state.secid,status:0}
     location.href="/Sign_in"
 }
 }
-
-
-
-// ==============================收藏查询=================
-searchshoucang=(e)=>{
-     CAxios.post(`/banJu/user/ifusersecgoods`,e).then((res)=>{   
-         console.log(res)
-                  return res.data;       
-              }).then((data)=>{
-        console.log(data.msg)
-                this.setState({
-                    shoucang:data.msg
-                })
-              }).catch((e) => {
-                    
-              });
+// ==========================================收藏的增删改===================================
+myshoucang=(m,e)=>{
+    CAxios.post(`${m}`,e).then((res)=>{   
+              console.log(res)
+                       return res.data;       
+                   }).then((data)=>{
+             console.log(data.msg)
+                     this.setState({
+                         shoucang:data.msg
+                     })
+                   }).catch((e) => {
+                         
+                   });
 }
-
-
-// ==============================================删除收藏============
-deleteshoucang=(e)=>{
-    CAxios.post(`/banJu/user/deleteuseridgoods`,e).then((res)=>{   
-                  return res.data;       
-              }).then((data)=>{
-        console.log(data.msg)
-                this.setState({
-                    shoucang:data.msg
-                })
-              }).catch((e) => {
-                    
-              });
-}
-
-
-
-
-
-
-
-// ================================================================添加收藏
-addshoucang=(e)=>{
-     CAxios.post(`/banJu/user/userssecgoods`,e).then(
-        (res)=>{   
-                  return res.data;       
-              }).then((data)=>{
-        console.log(data.msg)
-                this.setState({
-                    shoucang:data.msg
-                })
-              }).catch((e) => {
-                    
-              });
-}
-
-
-
 
 
 // ========================================获取数据=====================================
@@ -120,13 +78,11 @@ getproduct=(e)=>{
                       console.log(res)
                   return res.data;       
               }).then((data)=>{
-      console.log(data.data)
-  
         this.setState({
             secdetail:{
               title:data.data.title,
                price:data.data.price,
-               img:["assets/images/baobao1_1.jpg","assets/images/baobao1_2.jpg","assets/images/baobao1_3.jpg","assets/images/baobao1_4.jpg",],
+               img:JSON.parse(data.data.img),
                address:data.data.address,
               furtherAddress:data.data.furtherAddress,
                phoneNumber:data.data.phoneNumber,
@@ -143,14 +99,13 @@ getproduct=(e)=>{
             let secimgdiv=this.state.secdetail.img.map((item,index)=>{
                 console.log(item)
                 return (
-                    <img  src={require(`../../${item}`)} style={{marginRight:10,width:300,height:300}} key={"sec"+index} alt="商品图片"/>
+                    <img  src={require(`../../assets/images/${item}`)} style={{marginRight:10,width:300,height:300}} key={"sec"+index} alt="商品图片"/>
                 )
             })
             this.setState({
                 secimgdiv:secimgdiv
             })
-        })
-               
+        })     
               }).catch((e) => {
                     
               });
@@ -161,21 +116,14 @@ getproduct=(e)=>{
 
 // =======================================页面初始化=================================
 componentDidMount(){
-
-
-
     this.getproduct({id:parseInt(this.state.secid)})
-   
     if(sessionStorage.getItem("user")!==null){
         this.setState({
             uid:(JSON.parse(sessionStorage.getItem("user")).id)
         },()=>{
-            this.searchshoucang({uid:this.state.uid,secid:parseInt(this.props.match.params.id),status:1})
+            this.myshoucang("/banJu/user/ifusersecgoods",{uid:this.state.uid,secid:parseInt(this.props.match.params.id),status:1})
         })  
     }
-
-
-  
 }
  
 
@@ -194,19 +142,17 @@ info=()=> {
   }
 
 
-// =============================收藏=======================================
+// =============================收藏点击判断=======================================
 shoucang=()=>{
-   
     if(sessionStorage.getItem("user")!==null){
  if(this.state.shoucang==="收藏"){
-       this.addshoucang({uid:this.state.uid,secid:parseInt(this.props.match.params.id),status:1})
+       this.myshoucang("/banJu/user/userssecgoods",{uid:this.state.uid,secid:parseInt(this.props.match.params.id),status:1})
     }else if(this.state.shoucang==="已收藏"){
-        this.deleteshoucang({uid:this.state.uid,secid:parseInt(this.props.match.params.id)})
+        this.myshoucang("/banJu/user/deleteuseridgoods",{uid:this.state.uid,secid:parseInt(this.props.match.params.id)})
     }
-    }else{
+    }else {
         location.href="/Sign_in"
-    }
-   
+    } 
 }
 
 
@@ -217,7 +163,7 @@ shoucang=()=>{
 // ===============================购买============================================
 goumai(){
    
-    // window.location.href="/Personal_Center_index/Personal_My_shopping_order_two"
+  
     if(sessionStorage.getItem("user")!==null){
         this.setState({
             choosearr:[{
@@ -229,10 +175,9 @@ goumai(){
                 specifications:this.state.secdetail.description
             }]
         },()=>{
-            console.log(this.state.secdetail)
-            console.log(this.state.choosearr)
+           
             this.props.getcarttoorder(this)
-            // this.props.history.push({pathname:"/orderllist"})
+           
             this.props.history.push('Personal_Center_index/Personal_My_shopping_order_two');
 
             console.log(this.state.choosearr)
@@ -245,27 +190,7 @@ goumai(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ========================================页面渲染=======================================
     render() { 
      
         return ( 
@@ -278,7 +203,7 @@ goumai(){
                <div className="sec_detail_box">
                 <p className="sec_detail_header">{this.state.secdetail.title}  {this.state.secdetail.price}元</p>
                 <div className="sec_detail">
-                    <img src={require(`../../${this.state.secdetail.img[0]}`)} alt="商品图"/>
+                    <img src={require(`../../assets/images/${this.state.secdetail.img[0]}`)} alt="商品图"/>
                     <div >
                         <p >价格：{this.state.secdetail.price}</p>
                         <p>成色：{this.state.secdetail.newOld}</p>

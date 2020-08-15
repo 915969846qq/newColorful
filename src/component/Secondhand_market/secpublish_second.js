@@ -166,7 +166,7 @@ info=()=> {
         newOld:that.state.newstatus,
         title:that.state.title,
           description:that.state.description,
-          img:"min-banner1_03.jpg",
+          img:["baobao1_1.jpg","baobao1_2.jpg","baobao1_3.jpg","baobao1_4.jpg"],
           address:address,
           furtherAddress:that.state.detailaddress,
           callMan:that.state.lianxiren,

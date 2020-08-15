@@ -7,6 +7,7 @@ import $ from 'jquery'
 import Check from '../commen/check'
 // 二手市场
 import CAxios from '../../util/chenmingaxios'
+import Item from 'antd/lib/list/Item'
 export default class Secondhand_Market extends Component {
   constructor() {
     super()
@@ -123,7 +124,7 @@ export default class Secondhand_Market extends Component {
         <div className="secprod_detailbox" key={item.id}>
           <Link to={'/Secondhand_Market/Secdetail/' + item.id}>
             <div className="secprod_detail">
-              <img src={require(`../../assets/images/baobao1_1.jpg`)} alt="二手货"/>
+              <img src={require(`../../assets/images/${(JSON.parse(item.img))[0]}`)} alt="二手货"/>
               <div className="sec-textbox">
                 <p className="sec_title">{item.title}</p>
                 <p>
