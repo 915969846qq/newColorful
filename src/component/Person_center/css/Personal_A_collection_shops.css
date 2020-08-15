@@ -1,0 +1,268 @@
+.xt5 .ant-table table.xt5 .box{
+    width: 996px;
+    height: 650px;
+    position: relative;
+    left: 12px;
+    border: 1px solid #b1b1b1;
+}
+.xt5 .title{
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    color: #333;
+    text-indent: 12px;
+    background-color: #f7f7f7;
+}
+.xt5 .setion{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.xt5 .xinxi img{
+    clear: both;
+    width: 99px;
+    height: 84px;
+}
+.xt5 span{
+    font-size: 12px;
+}
+.xt5 .color{
+    color: #ff0000
+}
+.xt5 .state {
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+.xt5 .butone span {
+
+    width: 80px;
+    height: 25px;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    background-color: #ff0000;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 16px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.xt5 .textw{
+    float: right;
+    margin-left: -40px;
+    font-size: 12px;
+    line-height: 84px;
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.xt5 .xinxi{
+    width: 372px;
+}
+
+
+
+.xt5 .ant-table-thead > tr >th{
+    font-size: 13px;
+}
+.xt5 .join {
+    color: #ff0000;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    top: -123px;
+    left: 88px;
+}
+.xt5 .All-out label {
+    margin-right: 10px;
+}
+
+/*直营店*/
+.xt5 .coolra-two {
+    width: 175px;
+    float: left;
+    margin-right: 30px;
+}
+.xt5 .coolra-two .top {
+
+    height: 60px;
+    line-height: 60px;
+    border: none;
+}
+.xt5 .coolra-two .top h5 {
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+}
+.xt5 .coolra-two .top img {
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+.xt5 .coolra-two p {
+    clear: both;
+    font-size: 12px;
+    color: #999;
+    line-height: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.xt5 .coolra-two .buton {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.xt5 .coolra-two .buton .Aleft {
+    width: 80px;
+    height: 30px;
+    display: block;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+}
+.xt5 .coolra-two .GoToinmaoim {
+    width: 175px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ff0000;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+
+    border-radius: 4px;
+}
+.xt5 .coolra-two .buton .Aleft {
+    border: 0;
+    width: 80px;
+    height: 30px;
+    display: block;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+}
+.xt5 .coolra-two .buton .Aright {
+    float: right;
+}
+.xt5 .Shop_introduction {
+    width: 241px;
+    height: 170px;
+    float: left;
+    margin-top: 20px;
+    border-left: 1px solid #b1b1b1;
+    padding-left: 10px;
+}
+.xt5 .Shop_introduction h4 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.xt5 .Shop_introduction p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #999;
+    text-indent: 12px;
+}
+.xt5 .canPin{
+    width: 160px;
+    float: left;
+    margin: 15px 25px;
+}
+.xt5 .oimg {
+    width: 160px;
+    height: 110px;
+    margin-bottom: 20px;
+}
+.xt5 .oimg img{
+    width: 160px;
+    height: 110px;
+}
+.xt5 .canPin p{
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-top: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.xt5 .ant-table-content{
+    width: 100%;
+}
+.xt5 .canPin span {
+    color: #ff0000;
+    font-size: 16px;
+    float: right;
+    margin-right: 20px;
+}
+.xt5 .sjbox{
+    width: 962px;
+}
+.xt5 .ant-table table{
+    width: 100%;
+    text-align: left;
+   border: 0 !important;
+    border-left: 0 !important;
+    border-top: 0 !important;
+}
+.xt5 .ant-checkbox-input{
+    display: none;
+}
+.xt5 .anticon svg {
+    display: none;
+}
+.xt5 .ant-table-thead{
+    /*display: none;*/
+    visibility: hidden;
+    border: 0 !important;
+}
+.xt5 .ant-table-thead .ant-table-cell .ant-table-selection{
+    display: none;
+
+}
+.xt5 .ant-table-cell{
+   border-right: 0 !important;
+   border-left: 0 !important;
+   border-top: 0 !important;
+}
+.xt5 .ant-table-thead > tr >th{
+    border: 0 !important;
+}
+.xt5 .ant-table-tbody > tr >th{
+    border: 0 !important;
+}
+/*.xt5 .ant-table-tbody > tr > td {*/
+/*    border: 0 !important;*/
+/*}.xt5 .ant-table-thead > tr > th:last-child{*/
+/*     border-right: none;*/
+/* }*/
+/*.xt5 .ant-table-tbody > tr > td:last-child{*/
+/*    border-right: none;*/
+/*}.ant-table-tbody > tr:last-child > td{*/
+/*     border-bottom: none;*/
+/* }*/
+.xt5 .ant-table.ant-table-bordered > .ant-table-container{
+    border: 0 !important;
+    position: relative;
+    top: -50px;
+}
+.xt5 .qx{
+    position: relative;
+    font-size: 16px;
+    top: -82px;
+    left: 45px;
+}

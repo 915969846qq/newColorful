@@ -1,0 +1,86 @@
+.parfor .ecsc-path {
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #FFF;
+    color: #555;
+    padding: 0 0 10px 0;
+    border-bottom: solid 1px #e5e5e5;
+    margin: 0 auto 20px;
+}
+.parfor .ecsc-path span {
+    padding-left: 16px;
+    display: block;
+    border-left: 5px solid #129969;
+    color: #000;
+}
+.parfor .tabmenu {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.parfor .tabmenu .tab {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    height: 31px;
+}
+.parfor ul, ol {
+    list-style: none outside none;
+}
+.parfor .tabmenu .tab li.active {
+    border-top-color: #23bc85;
+    background: #fff;
+    height: 31px;
+}
+.parfor .tabmenu .tab li {
+    float: left;
+    line-height: 30px;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    margin-right: 6px;
+}
+.parfor .tabmenu .tab li.active a {
+    color: #23bc85;
+}
+.parfor .tabmenu .tab li a {
+    display: block;
+    padding: 0 15px;
+    color: #7d7d7d;
+    font-size: 14px;
+}
+.parfor .ecsc-default-table {
+    line-height: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    clear: both;
+}
+.parfor .mt20 {
+    margin-top: 20px !important;
+}
+.parfor .ecsc-default-table thead {
+    border-top: 1px solid #ddd;
+}
+.parfor .ecsc-default-table thead th {
+    line-height: 20px;
+    color: #666;
+    height: 20px;
+    padding: 10px 0;
+    border-bottom: solid 1px #DDD;
+    background-color: #fafafa;
+    font-weight: bold;
+}
+.parfor .pl10 {
+    padding-left: 10px !important;
+}
+.parfor .tl {
+    text-align: left !important;
+}
+.parfor .ecsc-default-table tbody td {
+    color: #888;
+    background-color: #FFF;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ddd;
+    word-break: break-word;
+    text-align: left;
+}

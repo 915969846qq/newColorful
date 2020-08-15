@@ -1,0 +1,39 @@
+.Furniture .cuoponBox{
+    width: 1200px;
+    height: 120px;
+    margin: 20px auto ;
+    /* border: 1px solid firebrick; */
+}
+
+.Furniture .cuoponBox_content{
+    width: 350px;
+    height: 120px;
+    background-color: tomato;
+    border-radius: 5px;
+    margin: 0 30px;
+}
+.Furniture .cuoponFlex{
+    display:flex;
+}
+.Furniture .cuoponBox_Money{
+    width: 100px;
+    color: white;
+    font-size: 38px;
+    font-weight: bolder;
+    margin-top: 60px;
+    
+}
+.Furniture .cuoponBox_text{
+    border-right:5px dashed white ;
+    width: 120px;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.Furniture .marginLeft{
+   margin: 20px 30px;
+}
+
+
+

@@ -1,0 +1,36 @@
+/* 每行标题 */
+.chenming .personal_info{
+    width: 500px;
+    height: 600px;
+    padding-top: 100px ;
+  margin: 0 auto;
+}
+.personal_info>div>span{
+    display: block;
+    float:left;
+    width: 100px;
+    text-align: right;
+    margin-right: 20px;
+ 
+    line-height: 32px;
+}
+/* 第一行 */
+.personal_img>span{
+    height: 16px!important;
+    line-height: 16px!important;
+}
+/* 头像 */
+.personal_info>div>img{
+    height: 100px;
+   
+}
+/* 个人信息单项盒子 */
+.personal_info>div{
+    margin-bottom: 20px;
+}
+/* 提交按钮 */
+.personal_info .submit_info{
+margin-left:120px;
+width: 250px;
+}
+

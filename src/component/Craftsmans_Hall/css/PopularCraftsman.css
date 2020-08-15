@@ -1,0 +1,186 @@
+.craftsmancss .craftsman{
+    margin: 5px 8px;
+    width: 284px;
+    border: 1px solid #666666;
+}
+.craftsmancss .cursor{
+    cursor: pointer;
+}
+.craftsmancss .flex{
+    display: flex;
+}
+.craftsmancss .craftsman_Info{
+    justify-content: space-between;
+}
+.craftsmancss .craftsman_name{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.craftsmancss .TranslateNow{
+    color: red;
+}
+.craftsmancss .craftsmanStyle{
+    width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.craftsmancss .padding{
+    padding: 13px ;
+    display: flex;
+}
+
+.craftsmancss .titleStyle{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.craftsmancss .joinUs{
+    font-size: 14px;
+}
+.craftsmancss .joinUs:hover{
+    color: red;
+}
+.craftsmancss .margin{
+    margin-right: 25px;
+}
+.craftsmancss .pavilionLImg{
+    width: 283px;
+    height: 300px;
+}
+.craftsmancss .craftsman_list_name{
+    font-size: 18px;
+    color: #555;
+}
+.craftsmancss .craftsman_company{
+    font-size: 14px;
+    color:#c3c2c2;
+}
+.craftsmancss .design{
+    width:60px ;
+    height: 26px;
+    background-color: red;
+    color: white;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 4px;
+}
+.craftsmancss .book{
+    width:60px ;
+    height: 26px;
+    color: black;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 4px;
+}
+.craftsmancss .craftsman_list_padding{
+    padding: 13px ;
+}
+.craftsmancss .caseImg{
+    width:282px ;
+    height: 283px;
+}
+.craftsmancss .page{
+    margin-left: 840px;
+}
+.craftsmancss  .table{
+    width: 1180px;
+    height: 120px;
+    margin: 10px auto;
+}
+.craftsmancss  .table-top{
+    /* height: 125px; */
+    margin:30px 0;
+    border: 1px solid #b1b1b1;
+}
+.craftsmancss  .tableBox{
+    height: 31px;
+    border-bottom: 1px dashed #b1b1b1;
+}
+.craftsmancss  .tableBox_left{
+    width:51px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 31px;
+    border-right: 1px solid #b1b1b1;
+    font-weight: bolder;
+}
+.craftsmancss  .tableBox_right span{
+    margin: 0 15px 0 5px;
+    font-size: 14px;
+    color:#b1b1b1 ;
+    line-height: 31px;
+    cursor: pointer;
+}
+.craftsmancss  .liStyle{
+    justify-content: flex-start;
+}
+.craftsmancss .table-bottom{
+    height: 31px;
+    border: 1px solid #b1b1b1;
+}
+.craftsmancss .table-bottom span{
+    display: inline-block;
+    width: 77px;
+    height: 30px;
+    border-right: 1px solid #b1b1b1;
+    text-align: center;
+    line-height: 30px;
+    color:#b1b1b1 ;
+    cursor: pointer;
+}
+.craftsmancss .myShow{
+    background-color:tomato;
+    color: white;
+    cursor: pointer;
+}
+.craftsmancss .myHide{
+    color: #b1b1b1 ;
+    cursor: pointer;
+}
+.craftsmancss .myChioce{
+    background-color:tomato;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.craftsmancss .myCancle{
+    color: #b1b1b1 ;
+    cursor: pointer;
+}
+.craftsmancss .Pages{
+    width: 55px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: skyblue;
+    user-select: none;
+}
+.craftsmancss .number{
+
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+.craftsmancss .currentNumber{
+    color: #b1b1b1;
+    font-size: 18px;
+}
+.craftsmancss .center{
+    text-align: center;
+    width: 1200px;
+}
+.craftsmancss .centerFlex{
+    margin-left: 520px;
+    margin-top: 20px;
+    text-align: center;
+}
+.craftsmancss .imgSize{
+    width: 283px;
+    height: 387px;
+}

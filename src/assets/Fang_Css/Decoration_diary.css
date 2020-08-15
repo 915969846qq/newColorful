@@ -1,0 +1,313 @@
+.fang_Width1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.fang_GBcolor {
+  background-color: #f6f6f6;
+}
+.fang_EBColor {
+  background-color: #e2e9f1;
+}
+.fang_0BColor {
+  background-color: black;
+}
+.fang_FBColor {
+  background-color: #f0f2f5;
+}
+.fang_RBColor {
+  background-color: #ff0000;
+}
+.fang_BbColor {
+  background-color: #1890ff;
+}
+.fang_WBColor {
+  background-color: #ffffff;
+}
+.fang_RColor {
+  color: #ff0000;
+}
+.fang_GColor {
+  color: #a9a9a9;
+}
+.fang_YColor {
+  color: #efbb00;
+}
+.fang_OColor {
+  color: #f68429;
+}
+.fang_RColor {
+  color: #e04a37;
+}
+.fang_LColor {
+  color: #5acd7f;
+}
+.fang_wcolor {
+  color: #ffffff;
+}
+.fang_boxshow {
+  box-shadow: -5px -5px 5px #8f8e8e;
+}
+.fang_title {
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.fang_fontW {
+  font-weight: 300;
+}
+.fang_padding20 {
+  padding-left: 20px;
+}
+.fang_paddingr20 {
+  padding-right: 20px;
+}
+.fang_padding30 {
+  padding-left: 30px;
+}
+.fang_padding45 {
+  padding-left: 45px;
+}
+.fang_paddingt10 {
+  padding-top: 10px;
+}
+.fang_paddingt20 {
+  padding-top: 20px;
+}
+.fang_paddingb20 {
+  padding-bottom: 20px;
+}
+.fang_paddingt30 {
+  padding-top: 30px;
+}
+.fang_paddingall {
+  padding: 40px 60px;
+}
+.fang_Border {
+  border: 1px solid #b1b1b1;
+}
+.fang_height {
+  text-align: center;
+  height: 100%;
+}
+.fang_rline {
+  border-right: 1px solid #b1b1b1;
+}
+.fang_Lline {
+  border-left: 3px solid #1890ff;
+}
+.fang_width1100 {
+  width: 1100px;
+  margin: 0 auto;
+}
+.fang_WBcolor {
+  background: #ffffff;
+}
+.fang_Button50 {
+  padding-bottom: 50px;
+}
+.fang_portraitS {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.fang_portraitL {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.fang_kuang100 {
+  width: 100px;
+  height: 100px;
+}
+.fang_center {
+  text-align: right;
+}
+.fang_marginT20 {
+  margin-top: 20px;
+}
+.fang_marginB10 {
+  margin-bottom: 10px;
+}
+.fang_margint50 {
+  margin-top: 50px;
+}
+.fang_marginB20 {
+  margin-bottom: 20px;
+}
+.fang_minhei150 {
+  min-height: 280px;
+}
+.fang_varticalTEXT {
+  letter-spacing: 18px;
+}
+.fang_varticalTEXT:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+.fang_marginR20 {
+  margin-right: 20px;
+}
+.fang_relative {
+  position: relative;
+}
+.fang_height100 {
+  height: 100%;
+}
+.fang_RBcolor {
+  color: #ff0000;
+  cursor: pointer;
+}
+.fang_option_write {
+  position: absolute;
+  right: 50px;
+}
+.fang_option_delet {
+  position: absolute;
+  right: 0px;
+}
+.fang_absolute {
+  position: absolute;
+}
+.fang_location {
+  bottom: 10px;
+  right: 20px;
+}
+.fang_option_Tips {
+  position: absolute;
+  right: 150px;
+}
+.fang_Middel {
+  line-height: 30px;
+}
+.fang_align {
+  align-items: center;
+  display: -webkit-flex;
+}
+.fang_marginL20 {
+  margin-left: 20px;
+}
+.fang_ib {
+  display: inline-block;
+}
+.fang_mybtn {
+  width: 120px;
+  height: 30px;
+  border-radius: 15px !important;
+  color: #ffffff;
+  background: #ff0000;
+  border: 0;
+  outline: none;
+}
+.fang_mybtn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.iconfont:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.fang_height30 {
+  height: 30px;
+  line-height: 30px;
+}
+.fang_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.fang_fontS {
+  font-size: 38px;
+}
+.fang_font22 {
+  font-size: 21px;
+}
+.fang_font18 {
+  font-size: 18px;
+}
+.fang_fontX {
+  font-size: 14px;
+}
+.fang_font12 {
+  font-size: 12px;
+}
+.fang_noborder {
+  outline: none;
+}
+.fang_border {
+  border: 0;
+}
+.fang_Tright {
+  text-align: right;
+}
+.fang_TLeft {
+  text-align: left;
+}
+.fang_height50 {
+  height: 50px;
+  line-height: 50px;
+}
+.fang_FangCenter {
+  text-align: center;
+}
+/* b边框线 */
+.fang_Bborder {
+  border-bottom: 1px solid #b1b1b1;
+}
+.fang_BBorder {
+  border-bottom: 1px dashed #b1b1b1;
+}
+.fang_portrait80 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.fang_width200 {
+  width: 200px;
+}
+.fang_myh:hover {
+  cursor: pointer;
+  color: #d3522b;
+}
+.fang_paddtop100 {
+  padding-top: 100px;
+}
+.fang_myLable:hover {
+  cursor: pointer;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: 0;
+}
+.fang_varMiddle {
+  vertical-align: middle;
+}
+.fang_botton0 {
+  bottom: 0;
+}
+.fang_bhov:hover {
+  cursor: pointer;
+  color: #40a9ff;
+}
+.fang_lineR {
+  border-right: 1px solid #e7e9f6;
+}
+.fang_lineL {
+  border-left: 1px solid #e7e9f6;
+}
+.fang_lineB {
+  border: 1px solid #e7e9f6;
+}
+.fang_myhover:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.fang_outdate {
+  background: #999999;
+}
+.fang_Bcolor9 {
+  color: #999999;
+  letter-spacing: 18px;
+  cursor: pointer;
+}
+.fang_borderline{
+border:1px solid #000000
+}

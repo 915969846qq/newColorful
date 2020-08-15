@@ -1,0 +1,131 @@
+.xt4 .box{
+    width: 998px;
+    height: 652px;
+    position: relative;
+    left: 12px;
+    border: 1px solid #b1b1b1;
+}
+.xt4 .title{
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    color: #333;
+    text-indent: 12px;
+    background-color: #f7f7f7;
+}
+.xt4 .setion{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.xt4 .xinxi img{
+    clear: both;
+    width: 99px;
+    height: 84px;
+}
+.xt4 span{
+    font-size: 12px;
+}
+.xt4 .color{
+    color: #ff0000
+}
+.xt4 .state {
+    width: 186px;
+    text-align: center;
+    margin: 0 auto;
+}
+.xt4 .butone a {
+
+    width: 80px;
+    height: 25px;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    background-color: #ff0000;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 16px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.xt4 .butone span {
+
+    width: 80px;
+    height: 25px;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    background-color: #ff0000;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 16px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+
+
+.xt4 .textw{
+    float: right;
+    margin: 0;
+    line-height: 84px;
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.xt4 .xinxi{
+    width: 372px;
+    margin: 0 auto;
+}
+
+
+
+.xt4 .ant-table-thead > tr >th{
+   font-size: 13px;
+}
+
+
+
+.xt4 .ant-spin-container .ant-pagination {
+    margin: 16px 50px;
+    position: relative;
+    /*top: 250px;*/
+
+}
+.xt4 .ant-dropdown-trigger{
+    display: none;
+}
+
+/*.xt4 .ant-table-thead .ant-table-cell .ant-table-selection{*/
+/*    position: relative;*/
+/*    top: 330px;*/
+
+/*}*/
+.xt4 .All-out{
+    color: #ff0000;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 0;
+    top: -70px;
+    position: relative;
+    left: 30px;
+}
+.xt4 .qx{
+    color: #0f0f0f;
+    position: relative;
+    /*margin-top:130px;*/
+    left: 45px;
+    top: -367px;
+}
+/* .ant-table-pagination-right {*/
+/*     float: right;*/
+/*     margin-top: 50px;*/
+/* }*/
+
+
+
+

@@ -1,0 +1,79 @@
+.secproductselectbox{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+/* 二手商品大盒子 */
+
+/* 二手商品盒子 */
+.secprod_detailbox{
+   margin:0 20px ;
+    width: 200px;
+}
+.secprod_detailbox .secprod_detail{   
+    width: 200px;
+  
+    border: 1px solid rgba(128, 128, 128, 0.493);
+    overflow: hidden;
+}
+.secprod_detailbox .secprod_detail>img{
+height:200px;
+}
+/* 底部文字信息 */
+.secprod_detailbox .sec-textbox{
+    padding: 0 10px;
+}
+/* //二手价格 */
+.sec_price{
+font-size: 20px;
+color:#ff26009c;
+}
+/* //卖家头像 */
+.secprod_detailbox .secbox_sellerimg{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+    
+}
+/* 商品描述 */
+.secprod_detailbox .sec_title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+/* 卖家盒子 */
+.secprod_detailbox .sec_seller_wrap{
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid rgba(128, 128, 128, 0.493);
+    padding-top: 3px;
+    
+}
+.secprod_detailbox p{
+    margin: 5px 0;
+    
+}
+/* 详细地址 */
+.secprod_detailbox .sec_detailregion{
+font-size: 12px;
+float:right;
+margin-top: 7px;
+margin-right: 3px;
+}
+.secproductselectbox{
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.secproductselectbox a{
+    color:black;
+}
+.chenmingpagebuttonbox{
+    margin: 90px;
+}
+.chenmingpagebutton{
+    width: 300px;
+    margin:0 auto;
+}

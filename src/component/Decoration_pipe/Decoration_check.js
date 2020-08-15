@@ -1,0 +1,129 @@
+import React, { Component } from 'react'
+import { Row, Col } from 'antd'
+import $ from 'jquery'
+function Check(props) {
+  const localtion = props.loc
+  const numbers = props.numbers
+  const listItems = numbers.map((number) => (
+    <Col
+      className="fang_marginL20 fang_myh"
+      key={number}
+      onClick={localtion.check.bind(localtion, numbers)}
+    >
+      {number}
+    </Col>
+  ))
+  return (
+    <Row>
+      {listItems} <Col className="fang_option_write"></Col>
+    </Row>
+  )
+}
+class Decoration_check extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      data: {
+        city: ['成都', '重庆', '杭州', '北京', '上海', '天津'],
+        style: ['古典', '现代', '田园', '北欧', '中式'],
+        Size: ['60以下', '60-80', '80-100', '100-120', '120以上'],
+      },
+    }
+  }
+  componentDidMount() {
+    console.log($)
+    // 用户点击选项
+    $('.fang_myh').on('click', function () {
+      // 点击更改样式
+      $(this).parent().children().not(':last').css({
+        color: '#595959',
+      })
+      $(this).css({
+        color: '#d3522b',
+      })
+    })
+  }
+  // 上传选中参数
+  check = (datas, e) => {
+    console.log(datas)
+    let data = $(e.target).html()
+    // 查看选中的是什么城市
+    for (let i = 0; i < this.state.data.city.length; i++) {
+      // console.log(this.state.data.city[i])
+      if (this.state.data.city[i] === data) {
+        this.setState({ city: this.state.data.city[i] }, () => {
+          console.log(this.state)
+          this.props.passdata(this.state)
+        })
+        break
+      }
+    }
+    // 查看选中的是什么风格
+
+    for (let m = 0; m < this.state.data.style.length; m++) {
+      // console.log(this.state.data.style[i])
+      if (this.state.data.style[m] === data) {
+        this.setState({ style: this.state.data.style[m] }, () => {
+          console.log(this.state)
+          this.props.passdata(this.state)
+        })
+        break
+      }
+    }
+    // 查看选中的是什么面积
+    for (let n = 0; n < this.state.data.Size.length; n++) {
+      // console.log(this.state.data.Size[n])
+      if (this.state.data.Size[n] === data) {
+        this.setState({ Size: this.state.data.Size[n] }, () => {
+          console.log(this.state)
+          this.props.passdata(this.state)
+        })
+        break
+      }
+    }
+    // 调用父组件的方法传参
+  }
+  render() {
+    return (
+      <div>
+        <h1>装修日志选择列表</h1>
+        <div className="fang_Border">
+          <Row className="fang_height50 fang_FangCenter fang_Bborder">
+            <Col span={3}>
+              全部日记
+              <span className="iconfont icon-next-page fang_fontX fang_marginL20"></span>
+            </Col>
+          </Row>
+          <Row className="fang_height50 fang_BBorder">
+            <Col span={2} className="fang_GBcolor fang_FangCenter">
+              风格
+            </Col>
+            <Col span={22} className="fang_padding20 fang_relative">
+              <Check numbers={this.state.data.style} loc={this} />
+              {/* <span className="iconfont icon-xiala fang_option_write"></span> */}
+            </Col>
+          </Row>
+          <Row className="fang_height50 fang_BBorder">
+            <Col span={2} className="fang_GBcolor fang_FangCenter">
+              面积
+            </Col>
+            <Col span={22} className="fang_padding20">
+              <Check numbers={this.state.data.Size} loc={this} />
+            </Col>
+          </Row>
+          <Row className="fang_height50">
+            <Col span={2} className="fang_GBcolor fang_FangCenter">
+              城市
+            </Col>
+            <Col span={22} className="fang_padding20 fang_relative">
+              <Check numbers={this.state.data.city} loc={this} />
+              {/* <span className="iconfont icon-xiala fang_option_write"></span> */}
+            </Col>
+          </Row>
+        </div>
+      </div>
+    )
+  }
+}
+
+export default Decoration_check
